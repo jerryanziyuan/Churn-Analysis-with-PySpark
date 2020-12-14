@@ -2,6 +2,7 @@
 #### Problem statement
 Sparkify is a fictional music streaming company similar to Spotify. It business model follows subscriber-based model, which means users can choose to pay a monthly fee to enjor their premiumn service. However, users can also choose to switch to free tier anytime.
 In this post, I am going to manipulate the datasets with Spark to predict custumer churn.
+Medium: https://medium.com/@zyan5/predicting-churn-for-music-streaming-app-with-spark-5527764c6157
 #### Metrics
 Here I will test out several of the most common machine learning methods and evaluated the accuracy of the three models using the F1 Score. Since the churned users are a fairly small subset, the F1 score should be used to balance the precision and recall.
 
