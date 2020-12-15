@@ -16,9 +16,20 @@ One of the examples of such practice is using pipelines. I used the pipeline to 
 Here I have used out several of the most common machine learning methods and evaluated the accuracy of the three models: Logistic Regression, Random Forest, and Decision Tree. 
 The reason I prefer simpler model is because we can better interprete the model result and communicate the finding to bussiness users. We use the model here as a baseline. Then try to refine and tune it in the next section.
 #### Refinement
-In this section, I have used the grid search to tune the logistic regression model because it has the best baseline performance out of the box.
+In this section, I have used the grid search to tune the logistic regression model because it has the best baseline performance out of the box with a 70% F1 score.(50% is equal to random guessing)
 #### Model Evaluation and Validation
-After tunning, the linear regression model come back with an F1 score of 
-#### Justification
+I used grid search to tune the logit model. The two parameter tuned are: regParam,elasticNetParam.
+After tunning, the logit model came back with an F1 score of 81.94% on the validation set.
+#### Conclusion &  Improvement
+In this notebook, we walkthroughed how to manipulate a large dataset with Spark in python, apply a data engineering pipeline, and find the best machine learning model. 
+Untilizing grid search, we are able to improve our model accuracy 10 % F1 score comparing to the base untuned model. 
+There are a lot of other great things that we can do in the distributed system and this is just the tip of the iceberg. We can of course add in more features in the grid search and increase the parameter intervals. Also, we can try more popular & advanced boosting models that will iteratively look at the training data to help reinforce the model. 
 
-#### Reflection and Improvement
+#### Installation
+In this project, I have used IBM Watson Studio Service as a plat form. Here are the list of requirements for enviroment: 
+
+
+Python 3.7
+PySpark ML
+Jupyter Notebook
+ibmos2spark
